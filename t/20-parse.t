@@ -4,7 +4,7 @@ use warnings;
 no warnings 'once';
 
 $|++;
-use Test::More tests => 54;
+use Test::More tests => 63;
 use Scalar::Util qw(blessed reftype);
 use Config::Any;
 use Config::Any::General;
@@ -13,6 +13,7 @@ use Config::Any::JSON;
 use Config::Any::Perl;
 use Config::Any::XML;
 use Config::Any::YAML;
+use Config::Any::TT2;
 
 $Config::Any::YAML::NO_YAML_XS_WARNING = 1;
 
@@ -22,7 +23,8 @@ our %ext_map = (
     json => 'Config::Any::JSON',
     pl   => 'Config::Any::Perl',
     xml  => 'Config::Any::XML',
-    yml  => 'Config::Any::YAML'
+    yml  => 'Config::Any::YAML',
+    tt2  => 'Config::Any::TT2'
 );
 
 sub load_parser_for {

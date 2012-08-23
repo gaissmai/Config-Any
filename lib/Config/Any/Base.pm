@@ -17,8 +17,8 @@ format.
 
 =head2 is_supported( )
 
-Allows us to determine if the file format can be loaded. The can be done via
-one of two subclass methds:
+Allows us to determine if the file format can be loaded. This can be done via
+one of two subclass methods:
 
 =over 4
 

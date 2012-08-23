@@ -1,5 +1,8 @@
 Revision history for Config-Any
 
+0.23_1 2012-08-23
+    - add Config::Any::TT2
+
 0.23 2011-07-13
     - fix test suite's method of checking availability of plugins
 

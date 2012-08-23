@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use Module::Pluggable::Object ();
 
-our $VERSION = '0.23';
+our $VERSION = '0.23_1';
 
 =head1 NAME
 
@@ -30,7 +30,7 @@ Config::Any - Load configuration from different file formats, transparently
 
 L<Config::Any|Config::Any> provides a facility for Perl applications and libraries
 to load configuration data from multiple different file formats. It supports XML, YAML,
-JSON, Apache-style configuration, Windows INI files, and even Perl code.
+JSON, Apache-style configuration, Windows INI files, TT2 files and even Perl code.
 
 The rationale for this module is as follows: Perl programs are deployed on many different
 platforms and integrated with many different systems. Systems administrators and end 
@@ -315,6 +315,7 @@ L<Module::Pluggable|Module::Pluggable>
 And at least one of the following:
 L<Config::General|Config::General>
 L<Config::Tiny|Config::Tiny>
+L<Config::TT2|Config::TT2>
 L<JSON|JSON>
 L<YAML|YAML>
 L<JSON::Syck|JSON::Syck>
